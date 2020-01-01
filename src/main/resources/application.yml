@@ -1,0 +1,18 @@
+server:
+  port: 6011
+
+spring:
+  application:
+    name: ms-eureka #服务名称
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka/
+
+
+
+
+
